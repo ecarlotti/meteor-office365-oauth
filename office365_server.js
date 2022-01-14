@@ -77,7 +77,7 @@ OAuth.registerService('office365', 2, null, function(query) {
       officeLocation: identity.officeLocation,
       preferredLanguage: identity.preferredLanguage,
     },
-    options: { profile: { name: identity.givenName } },
+    options: { profile: { name: identity.displayName } },
   };
 });
 
